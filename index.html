@@ -1,1 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYAN HALL Y'ALL Y'ALL Y'ALL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Bangers', cursive;
+            background: #fff;
+            color: #000;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL";
+            position: fixed;
+            top: 0;
+            left: 0;
+            font-size: 8em;
+            opacity: 0.03;
+            transform: rotate(-15deg);
+            z-index: -1;
+            white-space: nowrap;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 8em;
+            color: #000;
+            margin-bottom: 30px;
+            transform: rotate(-5deg) skew(-10deg);
+            letter-spacing: -5px;
+        }
+
+        h1:hover {
+            transform: rotate(5deg) skew(10deg) scale(1.2);
+            transition: all 0.3s;
+        }
+
+        .subtitle {
+            font-size: 3em;
+            color: #000;
+            margin-bottom: 40px;
+            text-decoration: underline wavy;
+            text-decoration-thickness: 5px;
+            transform: rotate(3deg);
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .image-card {
+            background: #fff;
+            border: 8px double #000;
+            padding: 20px;
+            transform: rotate(-10deg);
+        }
+
+        .image-card:nth-child(2) {
+            transform: rotate(15deg) translateY(-20px);
+        }
+
+        .image-card:nth-child(3) {
+            transform: rotate(-8deg) translateY(30px);
+        }
+
+        .image-card:nth-child(4) {
+            transform: rotate(12deg) translateX(-10px);
+        }
+
+        .image-card:hover {
+            transform: scale(1.5);
+            transition: all 0.3s;
+            z-index: 100;
+            position: relative;
+            border-style: dotted;
+            border-width: 12px;
+        }
+
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #000;
+            border-radius: 50% 0% 50% 0%;
+        }
+
+        .image-caption {
+            font-size: 1.8em;
+            color: #000;
+            margin-top: 15px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .gif-section {
+            margin: 80px 0;
+            padding: 50px;
+            border: 15px ridge #000;
+            transform: rotate(2deg);
+            background: repeating-linear-gradient(45deg,
+                    #fff,
+                    #fff 10px,
+                    #f0f0f0 10px,
+                    #f0f0f0 20px);
+        }
+
+        .gif-section h2 {
+            font-size: 5em;
+            color: #000;
+            margin-bottom: 20px;
+            text-shadow: 5px 5px 0px #ccc, 10px 10px 0px #999;
+            transform: scale(1.2, 2);
+        }
+
+        .main-gif {
+            max-width: 100%;
+            height: auto;
+            border: 10px groove #000;
+            transform: skew(-5deg, -5deg);
+        }
+
+        .fun-facts {
+            background: #fff;
+            padding: 50px;
+            margin: 40px 0;
+            border: 20px solid #000;
+            border-style: dotted dashed solid double;
+            transform: rotate(-3deg);
+        }
+
+        .fun-facts h3 {
+            font-size: 4em;
+            color: #000;
+            margin-bottom: 30px;
+            text-decoration: overline underline;
+            text-decoration-style: zigzag;
+            letter-spacing: 10px;
+        }
+
+        .fun-facts ul {
+            font-size: 1.5em;
+            color: #000;
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .fun-facts li {
+            margin: 20px 0;
+            padding-left: 80px;
+            position: relative;
+            transform: none;
+        }
+
+        .fun-facts li:nth-child(even) {
+            transform: none;
+        }
+
+        .fun-facts li::before {
+            content: "Y'ALL->";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 100px;
+            font-size: 3em;
+            color: #000;
+            transform: rotate(-10deg) scale(1, 2);
+            letter-spacing: 5px;
+            border: 10px solid #000;
+            border-radius: 50%;
+            padding: 40px;
+            display: inline-block;
+        }
+
+        .tornado-warning {
+            position: fixed;
+            top: 50%;
+            right: -200px;
+            font-size: 10em;
+            transform: rotate(90deg);
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        .yall-spam {
+            font-size: 2em;
+            margin: 40px 0;
+            word-spacing: 20px;
+            letter-spacing: 5px;
+            transform: skew(-20deg);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 4em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tornado-warning">TORNADO!</div>
+    <div class="container">
+        <h1>RYAN HALL Y'ALL!!!</h1>
+        <div class="subtitle">~~~ULTIMATE STORM CHASER SUPREME~~~</div>
+
+        <div class="yall-spam">Y'ALL Y'ALL Y'ALL Y'ALL Y'ALL</div>
+
+        <div class="image-gallery">
+            <div class="image-card">
+                <img src="1.png" alt="Ryan Hall Y'all Photo 1">
+                <div class="image-caption">MEGA STORM!!!</div>
+            </div>
+            <div class="image-card">
+                <img src="2.png" alt="Ryan Hall Y'all Photo 2">
+                <div class="image-caption">RADAR WIZARD!!!</div>
+            </div>
+            <div class="image-card">
+                <img src="3.png" alt="Ryan Hall Y'all Photo 3">
+                <div class="image-caption">Y'ALL READY?!?!</div>
+            </div>
+            <div class="image-card">
+                <img src="4.png" alt="Ryan Hall Y'all Photo 4">
+                <div class="image-caption">TORNADO TIME!!!</div>
+            </div>
+        </div>
+
+        <div class="gif-section">
+            <h2>!!!LIVE ACTION Y'ALL!!!</h2>
+            <img src="1.gif" alt="Ryan Hall Y'all Animated GIF" class="main-gif">
+        </div>
+
+        <div class="fun-facts">
+            <h3>F A C T S</h3>
+            <ul>
+                <li>Tried to buy out competitors channel</li>
+                <li>Has $1M sitting in the YallSquad bank account 🔥</li>
+                <li>Likes Ai more than his wife</li>
+                <li>Hasn't contacted an employee since the stone ages</li>
+                <li>lol</li>
+                <li>He literally EXPLODES when he says Y'ALL</li>
+                <li>Has a PhD in Y'ALL-ology from Tornado University</li>
+                <li>Owns a vape shop still!!!</li>
+            </ul>
+        </div>
+
+        <div class="yall-spam">Y'ALL</div>
+
+        <div style="margin: 60px 0; padding: 40px; border: 10px dashed #000; transform: rotate(-2deg);">
+            <h2 style="font-size: 3em; margin-bottom: 30px;">YALLCAM LIVE FEED</h2>
+            <iframe src="https://bobisoner34qwtg5.github.io/Yallcam/Index.html" 
+                    style="width: 100%; height: 600px; border: 8px solid #000; transform: skew(2deg, 0deg);">
+            </iframe>
+        </div>
+
+        <div class="footer">
+            STAY SAFE<br>
+            Y'ALL!!!
+        </div>
+    </div>
+</body>
+
+</html>
